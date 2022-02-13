@@ -1,0 +1,13 @@
+select * from products
+select * from menu
+select * from restaurants
+select * from users
+insert into users(email, username, name, password_hash) values('ab@c.com', 'rest1', 'rest1', '12345678')
+insert into restaurants(name, user_id) values('dumblemuble',2)
+
+insert into menu(name,restaurant_id) values('dombili burger menu', 1)
+insert into menu(name,restaurant_id) values('dumblemumle menu', 3)
+
+insert into products(name,detailed_info,price,image_url,menu_id) values('Bombili', 'Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı', '30','https://picjumbo.com/yummy-pulled-pork-burger/', 1)
+insert into products(name,detailed_info,price,image_url,menu_id) values('Duble Peynirli', 'Çift katlı, mozerella ve çedarla bezenmiş dombili burger', '50','https://picjumbo.com/yummy-pulled-pork-burger/', 1)
+insert into products(name,detailed_info,price,image_url,menu_id) values('Tek Katlı', 'Bol domatesli, özel muble soslu', '25','https://picjumbo.com/yummy-pulled-pork-burger/', 6)
